@@ -23,6 +23,7 @@ jobs:
       run: npm test
   
   Deploy:
+    needs: Test
     runs-on: ubuntu-latest
     steps:
     - name: Clone the repo
